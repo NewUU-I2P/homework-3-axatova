@@ -5,22 +5,22 @@ std::string problemSolution3(float height, char S) {
     
         if (S == 'M') {
         if (height < 1.70) {
-            cout << "Short" << endl;
+            problemSolution3=Short;
         } else if (height >= 1.70 && height < 1.85) {
-            cout << "Normal" << endl;
+            problemSolution3=Normal;
         } else {
-            cout << "Tall" << endl;
+            problemSolution3=Tall;
         }
     } else if (S == 'F') {
         if (height < 1.60) {
-            cout << "Short" << endl;
+            problemSolution3=Short;
         } else if (height >= 1.60 && height < 1.75) {
-            cout << "Normal" << endl;
+            problemSolution3=Normal;
         } else {
-            cout << "Tall" << endl;
+            problemSolution3=Tall;
         }
     } else {
-        cout << "Invalid input for sex." << endl;
+        problemSolution3=Invalid;
     }
 
     return 0;
