@@ -1,17 +1,14 @@
 float problemSolution2(float i, float j, float k) {
     float result;
     // write your code here;
-    cin>>i>>j>>k;
+    
     if(i>j && i>k) {
-        cout << " The maximum number is " << i << endl;
+       result=i;
     }else if( j>i && j>k) {
-        cout << "The maximum number is " << j << endl;
+      result=j;
     }else{
-        cout<<" The maximum number is "<< k<< endl;
+      result=k;
     }
 
-    return 0;
-}
-
-    return result;
+  return result;
 }
