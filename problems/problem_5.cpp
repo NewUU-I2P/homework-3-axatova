@@ -12,20 +12,8 @@ float problemSolution5(float x, float y, char operation) {
             result = x * y;
             break;
         case '/':
-            if (y != 0) {
-                result = x/ y;
-            } else {
-                cout << "Error" << endl;
-                return 1;
-            }
+            result = x / y;
             break;
-        
-            
-            
-    }
-
-    
-    
-
+   }
    return result;
 }
