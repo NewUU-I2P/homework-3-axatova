@@ -1,26 +1,27 @@
 #include <string>
 
-std::string problemSolution3(float height, char S) {
+std::string problemSolution3(float height, char S)
+std:: string result{
     // write your code here
     
         if (S == 'M') {
         if (height < 1.70) {
-            problemSolution3=Short;
+            result='Short';
         } else if (height >= 1.70 && height < 1.85) {
-            problemSolution3=Normal;
+            result='Normal';
         } else {
-            problemSolution3=Tall;
+            result='Tall';
         }
     } else if (S == 'F') {
         if (height < 1.60) {
-            problemSolution3=Short;
+            result='Short';
         } else if (height >= 1.60 && height < 1.75) {
-            problemSolution3=Normal;
+            result='Normal';
         } else {
-            problemSolution3=Tall;
+            result='Tall';
         }
     } else {
-        problemSolution3=Invalid;
+        result='Invalid';
     }
 
     return 0;
